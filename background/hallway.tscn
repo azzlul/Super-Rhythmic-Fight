@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3 uid="uid://ctrm7ts723eax"]
+
+[ext_resource type="PackedScene" uid="uid://dluj0b83rvbh2" path="res://blender projects/hallway.blend" id="1_r8ebk"]
+[ext_resource type="Script" path="res://background/hallway.gd" id="2_lh65d"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_w4wwj"]
+albedo_color = Color(0, 0, 0, 1)
+emission_enabled = true
+emission_energy_multiplier = 0.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_grban"]
+albedo_color = Color(0, 0, 0, 1)
+emission_enabled = true
+
+[node name="hallway" instance=ExtResource("1_r8ebk")]
+script = ExtResource("2_lh65d")
+
+[node name="Cylinder" parent="." index="0"]
+transform = Transform3D(-8.74228e-08, 2, 0, -2, -8.74228e-08, 0, 0, 0, 2, 0.845154, 0, 0)
+
+[node name="Cylinder_001" parent="Cylinder" index="0"]
+material_override = SubResource("StandardMaterial3D_w4wwj")
+
+[node name="Cylinder_002" parent="Cylinder" index="1"]
+material_override = SubResource("StandardMaterial3D_grban")

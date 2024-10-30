@@ -1,0 +1,98 @@
+[gd_scene load_steps=10 format=3 uid="uid://cmygufsqqlspk"]
+
+[ext_resource type="Texture2D" uid="uid://cam2qm0kyfll6" path="res://images/player.png" id="1_6n06s"]
+[ext_resource type="Script" path="res://player/player.gd" id="1_gf00o"]
+[ext_resource type="Shader" path="res://player/player.gdshader" id="2_vu0r6"]
+[ext_resource type="Texture2D" uid="uid://cpkwvsqenqicp" path="res://images/player_cooldown_mask.png" id="4_c6r0s"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_jbu2c"]
+shader = ExtResource("2_vu0r6")
+shader_parameter/progress = 0.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_46utv"]
+radius = 18.0
+
+[sub_resource type="Animation" id="Animation_7ijhm"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("PlayerCooldownMask:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="Animation" id="Animation_rjnii"]
+resource_name = "cooldown"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("PlayerCooldownMask:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [true, false, true, false, true, false]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_a86nd"]
+_data = {
+"RESET": SubResource("Animation_7ijhm"),
+"cooldown": SubResource("Animation_rjnii")
+}
+
+[node name="Player" type="CharacterBody2D"]
+scale = Vector2(0.3, 0.3)
+collision_mask = 2
+script = ExtResource("1_gf00o")
+
+[node name="Player" type="Sprite2D" parent="."]
+material = SubResource("ShaderMaterial_jbu2c")
+position = Vector2(-4.26326e-15, 0)
+rotation = 1.5708
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_6n06s")
+
+[node name="PlayerCooldownMask" type="Sprite2D" parent="."]
+position = Vector2(2.38419e-07, 0)
+rotation = 1.5708
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("4_c6r0s")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_46utv")
+
+[node name="Timer" type="Node" parent="."]
+
+[node name="DashTimer" type="Timer" parent="Timer"]
+wait_time = 3.0
+one_shot = true
+
+[node name="DashLenghTimer" type="Timer" parent="Timer"]
+wait_time = 0.2
+one_shot = true
+
+[node name="DamageTimer" type="Timer" parent="Timer"]
+wait_time = 1.2
+one_shot = true
+
+[node name="SelfHealTimer" type="Timer" parent="Timer"]
+wait_time = 5.0
+autostart = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_a86nd")
+}
+
+[connection signal="timeout" from="Timer/DashTimer" to="." method="_on_dash_timer_timeout"]
+[connection signal="timeout" from="Timer/DashLenghTimer" to="." method="_on_dash_lengh_timer_timeout"]
+[connection signal="timeout" from="Timer/DamageTimer" to="." method="_on_damage_timer_timeout"]
+[connection signal="timeout" from="Timer/SelfHealTimer" to="." method="_on_self_heal_timer_timeout"]

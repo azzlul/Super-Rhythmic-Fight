@@ -1,0 +1,21 @@
+[gd_scene load_steps=5 format=3 uid="uid://cflw4h0llxile"]
+
+[ext_resource type="PackedScene" uid="uid://djqwiglklir4e" path="res://blender projects/room.blend" id="1_gbu1x"]
+[ext_resource type="Script" path="res://background/room.gd" id="2_aywif"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_myyj4"]
+albedo_color = Color(0, 0, 0, 1)
+emission_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_l0arr"]
+albedo_color = Color(0, 0, 0, 1)
+emission_enabled = true
+
+[node name="room" instance=ExtResource("1_gbu1x")]
+script = ExtResource("2_aywif")
+
+[node name="pillar" parent="." index="1"]
+material_override = SubResource("StandardMaterial3D_myyj4")
+
+[node name="pipes" parent="." index="3"]
+material_override = SubResource("StandardMaterial3D_l0arr")

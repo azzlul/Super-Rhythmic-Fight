@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://b36b0ij2qrcfu"]
+
+[ext_resource type="Script" path="res://background/background.gd" id="1_i37yk"]
+[ext_resource type="PackedScene" uid="uid://cqpicyll47how" path="res://blender projects/door.blend" id="1_rlv60"]
+
+[sub_resource type="Environment" id="Environment_6ppe8"]
+
+[node name="background" type="Node3D"]
+script = ExtResource("1_i37yk")
+
+[node name="door" parent="." instance=ExtResource("1_rlv60")]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_6ppe8")

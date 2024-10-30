@@ -1,0 +1,543 @@
+[gd_scene load_steps=3 format=3 uid="uid://olvxefk0jee2"]
+
+[ext_resource type="PackedScene" uid="uid://bqo8vl0xiusjo" path="res://blender projects/boss_parts2.blend" id="1_u7hid"]
+[ext_resource type="Script" path="res://background/boss_parts_2.gd" id="2_023cm"]
+
+[node name="boss_parts2" instance=ExtResource("1_u7hid")]
+script = ExtResource("2_023cm")
+
+[node name="iris" parent="." index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0612263, 0.0876283, -45.2315)
+layers = 2
+
+[node name="Sphere_cell" parent="." index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.2323, -1.84752, -30.0643)
+layers = 2
+
+[node name="Sphere_cell_001" parent="." index="2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.379, 14.2325, 11.5428)
+layers = 2
+
+[node name="Sphere_cell_002" parent="." index="3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32.1206, -9.75779, 8.89255)
+layers = 2
+
+[node name="Sphere_cell_003" parent="." index="4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.18706, -33.3088, 14.8889)
+layers = 2
+
+[node name="Sphere_cell_004" parent="." index="5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.15329, -24.8942, -28.8745)
+layers = 2
+
+[node name="Sphere_cell_005" parent="." index="6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.33553, 23.3132, -27.6003)
+layers = 2
+
+[node name="Sphere_cell_007" parent="." index="7"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.9668, -4.68239, -34.8662)
+layers = 2
+
+[node name="Sphere_cell_008" parent="." index="8"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.4974, 22.0677, 22.257)
+layers = 2
+
+[node name="Sphere_cell_009" parent="." index="9"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.7546, 16.3842, 19.1479)
+layers = 2
+
+[node name="Sphere_cell_010" parent="." index="10"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.3439, -33.2038, -9.17425)
+layers = 2
+
+[node name="Sphere_cell_011" parent="." index="11"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.05754, -38.7297, -0.24273)
+layers = 2
+
+[node name="Sphere_cell_012" parent="." index="12"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.7645, -26.5813, 18.6738)
+layers = 2
+
+[node name="Sphere_cell_013" parent="." index="13"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.1815, -13.5076, -18.8163)
+layers = 2
+
+[node name="Sphere_cell_014" parent="." index="14"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.5923, -22.4197, -2.13429)
+layers = 2
+
+[node name="Sphere_cell_015" parent="." index="15"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.22476, 18.9628, 28.9063)
+layers = 2
+
+[node name="Sphere_cell_016" parent="." index="16"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.94128, 37.0537, -2.92398)
+layers = 2
+
+[node name="Sphere_cell_017" parent="." index="17"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.2485, -34.4341, -14.4043)
+layers = 2
+
+[node name="Sphere_cell_018" parent="." index="18"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.7947, 19.9535, -19.5149)
+layers = 2
+
+[node name="Sphere_cell_019" parent="." index="19"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32.5653, 7.67726, 7.53631)
+layers = 2
+
+[node name="Plane_002_cell" parent="." index="20"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.323203, 27.6277, 30.1203)
+layers = 2
+
+[node name="Plane_002_cell_001" parent="." index="21"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -39.971, 1.59085, -7.81395)
+layers = 2
+
+[node name="Plane_002_cell_002" parent="." index="22"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.182585, -25.7679, -31.9566)
+layers = 2
+
+[node name="Plane_002_cell_003" parent="." index="23"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -37.9222, 0.455177, 14.9223)
+layers = 2
+
+[node name="Plane_002_cell_004" parent="." index="24"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.327751, -39.6839, 11.6736)
+layers = 2
+
+[node name="Plane_002_cell_005" parent="." index="25"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24.9888, 0.316723, 32.5735)
+layers = 2
+
+[node name="Plane_002_cell_006" parent="." index="26"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.5799, -12.4274, -36.8728)
+layers = 2
+
+[node name="Plane_002_cell_007" parent="." index="27"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.7989, 18.2202, 32.5793)
+layers = 2
+
+[node name="Plane_002_cell_008" parent="." index="28"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.8908, 13.2717, 36.6611)
+layers = 2
+
+[node name="Plane_002_cell_009" parent="." index="29"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.117658, 6.9805, 40.3534)
+layers = 2
+
+[node name="Plane_002_cell_010" parent="." index="30"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.615445, 40.5757, 2.1185)
+layers = 2
+
+[node name="Plane_002_cell_011" parent="." index="31"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.1742, 0.283375, -36.1826)
+layers = 2
+
+[node name="Plane_002_cell_012" parent="." index="32"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.335096, 37.6945, -14.1494)
+layers = 2
+
+[node name="Plane_002_cell_013" parent="." index="33"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31.4611, 0.353129, -26.1553)
+layers = 2
+
+[node name="Plane_002_cell_014" parent="." index="34"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.7268, -26.2678, -19.294)
+layers = 2
+
+[node name="Plane_002_cell_015" parent="." index="35"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.7374, -13.1098, -38.6097)
+layers = 2
+
+[node name="Plane_002_cell_016" parent="." index="36"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.8736, -22.1462, -27.5334)
+layers = 2
+
+[node name="Plane_002_cell_017" parent="." index="37"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25.7991, 27.7329, 14.1891)
+layers = 2
+
+[node name="Plane_002_cell_018" parent="." index="38"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.1624, -10.9014, -37.4525)
+layers = 2
+
+[node name="Plane_002_cell_019" parent="." index="39"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -36.1283, 0.441218, -19.3263)
+layers = 2
+
+[node name="Plane_002_cell_020" parent="." index="40"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.57791, -38.481, 10.5222)
+layers = 2
+
+[node name="Plane_002_cell_021" parent="." index="41"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.4078, -29.2837, 5.21505)
+layers = 2
+
+[node name="Plane_002_cell_022" parent="." index="42"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27.7582, -28.517, 7.33008)
+layers = 2
+
+[node name="Plane_002_cell_023" parent="." index="43"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.152, 18.0657, -33.2414)
+layers = 2
+
+[node name="Plane_002_cell_024" parent="." index="44"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.231317, -31.1127, 26.4494)
+layers = 2
+
+[node name="Plane_002_cell_025" parent="." index="45"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.3446, 0.237647, -38.581)
+layers = 2
+
+[node name="Plane_002_cell_026" parent="." index="46"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25.3225, 0.603382, -31.1889)
+layers = 2
+
+[node name="Plane_002_cell_027" parent="." index="47"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26.7308, -29.5902, -8.17111)
+layers = 2
+
+[node name="Plane_002_cell_028" parent="." index="48"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.1304, 14.2025, -36.1353)
+layers = 2
+
+[node name="Plane_002_cell_029" parent="." index="49"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.456, -21.6227, -26.9386)
+layers = 2
+
+[node name="Plane_002_cell_030" parent="." index="50"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.1722, -11.2038, 37.3569)
+layers = 2
+
+[node name="Plane_002_cell_031" parent="." index="51"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.8634, 16.9264, -32.6287)
+layers = 2
+
+[node name="Plane_002_cell_032" parent="." index="52"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.5787, -14.95, -35.0082)
+layers = 2
+
+[node name="Plane_002_cell_034" parent="." index="53"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.33027, -0.796737, -28.7957)
+layers = 2
+
+[node name="Plane_002_cell_035" parent="." index="54"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 39.7787, -0.318621, 1.0639)
+layers = 2
+
+[node name="Plane_002_cell_036" parent="." index="55"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.9026, -27.607, 18.4063)
+layers = 2
+
+[node name="Plane_002_cell_037" parent="." index="56"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26.3383, 0.172559, -32.6111)
+layers = 2
+
+[node name="Plane_002_cell_038" parent="." index="57"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.47051, 4.52678, -40.6669)
+layers = 2
+
+[node name="Plane_002_cell_039" parent="." index="58"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.9074, -19.0567, 31.0776)
+layers = 2
+
+[node name="Plane_002_cell_040" parent="." index="59"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.8665, -12.5476, -38.3486)
+layers = 2
+
+[node name="Plane_002_cell_041" parent="." index="60"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28.2438, -28.5088, -7.70596)
+layers = 2
+
+[node name="Plane_002_cell_042" parent="." index="61"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.7781, 21.4328, 28.1813)
+layers = 2
+
+[node name="Plane_002_cell_043" parent="." index="62"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.9418, 10.4766, 38.1539)
+layers = 2
+
+[node name="Plane_002_cell_044" parent="." index="63"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.228703, -30.4177, -27.5438)
+layers = 2
+
+[node name="Plane_002_cell_046" parent="." index="64"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.0843, 28.0008, -11.4975)
+layers = 2
+
+[node name="Plane_002_cell_047" parent="." index="65"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -41.2764, 1.20316, 3.10534)
+layers = 2
+
+[node name="Plane_002_cell_048" parent="." index="66"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.6296, -22.383, -26.7213)
+layers = 2
+
+[node name="Plane_002_cell_049" parent="." index="67"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.9562, 23.1719, -24.6907)
+layers = 2
+
+[node name="Plane_002_cell_050" parent="." index="68"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.41267, 0.0820613, -40.3929)
+layers = 2
+
+[node name="Plane_002_cell_051" parent="." index="69"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.2929, -40.058, -6.69996)
+layers = 2
+
+[node name="Plane_002_cell_053" parent="." index="70"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.0766, 21.689, -28.4584)
+layers = 2
+
+[node name="Plane_002_cell_054" parent="." index="71"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.0077, -5.21185, -40.2103)
+layers = 2
+
+[node name="Plane_002_cell_055" parent="." index="72"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28.3267, 28.9728, 2.12028)
+layers = 2
+
+[node name="Plane_002_cell_056" parent="." index="73"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 31.6615, -1.33923, 25.7661)
+layers = 2
+
+[node name="Plane_002_cell_057" parent="." index="74"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.1131, -0.0696379, 38.2395)
+layers = 2
+
+[node name="Plane_002_cell_058" parent="." index="75"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.432231, 39.1093, 11.9049)
+layers = 2
+
+[node name="Plane_002_cell_059" parent="." index="76"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26.6373, -27.4732, -12.9295)
+layers = 2
+
+[node name="Plane_002_cell_060" parent="." index="77"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.5189, 18.3197, 32.442)
+layers = 2
+
+[node name="Plane_002_cell_061" parent="." index="78"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40.1393, -0.158836, 1.79469)
+layers = 2
+
+[node name="Plane_002_cell_062" parent="." index="79"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.111116, -1.09504, -24.3979)
+layers = 2
+
+[node name="Plane_002_cell_063" parent="." index="80"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.142047, 8.77249, -41.2076)
+layers = 2
+
+[node name="Plane_002_cell_064" parent="." index="81"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.3842, -0.0842995, -35.2176)
+layers = 2
+
+[node name="Plane_002_cell_065" parent="." index="82"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.3459, -25.7268, 17.9224)
+layers = 2
+
+[node name="Plane_002_cell_066" parent="." index="83"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.065, 0.384376, -29.1782)
+layers = 2
+
+[node name="Plane_002_cell_067" parent="." index="84"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.57714, 0.767692, -32.3568)
+layers = 2
+
+[node name="Plane_002_cell_068" parent="." index="85"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.2607, 22.5758, 26.2889)
+layers = 2
+
+[node name="Plane_002_cell_069" parent="." index="86"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33.0478, -0.208937, -23.2312)
+layers = 2
+
+[node name="Plane_002_cell_070" parent="." index="87"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.1763, -20.6375, 29.0101)
+layers = 2
+
+[node name="Plane_002_cell_071" parent="." index="88"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.39246, 35.1389, 20.803)
+layers = 2
+
+[node name="Plane_002_cell_072" parent="." index="89"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.1237, 10.9276, -37.5218)
+layers = 2
+
+[node name="Plane_002_cell_073" parent="." index="90"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.322102, 26.6215, -30.7398)
+layers = 2
+
+[node name="Plane_002_cell_074" parent="." index="91"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30.7403, 0.427861, 25.6713)
+layers = 2
+
+[node name="Plane_002_cell_075" parent="." index="92"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.7647, 19.1515, -31.651)
+layers = 2
+
+[node name="Plane_002_cell_076" parent="." index="93"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0946124, -15.0408, 38.2084)
+layers = 2
+
+[node name="Plane_002_cell_077" parent="." index="94"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -32.1406, 0.386406, 27.0081)
+layers = 2
+
+[node name="Plane_002_cell_078" parent="." index="95"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26.6005, 28.5633, -8.37618)
+layers = 2
+
+[node name="Plane_002_cell_079" parent="." index="96"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.411, 5.68341, 41.4514)
+layers = 2
+
+[node name="Plane_002_cell_080" parent="." index="97"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.169473, 15.5776, -38.0263)
+layers = 2
+
+[node name="Plane_002_cell_081" parent="." index="98"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.249156, -35.9573, -19.5153)
+layers = 2
+
+[node name="Plane_002_cell_082" parent="." index="99"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.2939, 11.1397, -38.776)
+layers = 2
+
+[node name="Plane_002_cell_083" parent="." index="100"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.2641, 28.0547, 11.8805)
+layers = 2
+
+[node name="Plane_002_cell_086" parent="." index="101"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40.1692, -0.639857, -7.84951)
+layers = 2
+
+[node name="Plane_002_cell_087" parent="." index="102"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.7447, 25.5142, 20.3588)
+layers = 2
+
+[node name="Plane_002_cell_089" parent="." index="103"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.0334, 17.2316, 33.0137)
+layers = 2
+
+[node name="Plane_002_cell_091" parent="." index="104"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.189966, -0.708797, 27.9753)
+layers = 2
+
+[node name="Plane_002_cell_092" parent="." index="105"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.118538, -19.2718, -36.1851)
+layers = 2
+
+[node name="Plane_002_cell_093" parent="." index="106"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.7316, 23.3396, -25.6373)
+layers = 2
+
+[node name="Plane_002_cell_094" parent="." index="107"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24.8509, -25.6051, 19.864)
+layers = 2
+
+[node name="Plane_002_cell_095" parent="." index="108"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.4703, -17.4217, -33.3417)
+layers = 2
+
+[node name="Plane_002_cell_096" parent="." index="109"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.77941, -9.57794, 38.9209)
+layers = 2
+
+[node name="Plane_002_cell_097" parent="." index="110"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5257, 11.7571, 37.9207)
+layers = 2
+
+[node name="Plane_002_cell_098" parent="." index="111"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.16426, -22.3337, 34.3313)
+layers = 2
+
+[node name="Plane_002_cell_099" parent="." index="112"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29.4924, 0.114974, 26.9791)
+layers = 2
+
+[node name="Plane_002_cell_088" parent="." index="113"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.6964, -0.831932, -39.3852)
+layers = 2
+
+[node name="Plane_002_cell_090" parent="." index="114"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.4545, 11.343, -38.2273)
+layers = 2
+
+[node name="Plane_002_cell_100" parent="." index="115"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.1075, -0.91476, 39.2996)
+layers = 2
+
+[node name="Plane_002_cell_101" parent="." index="116"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.84473, 1.06717, -41.3746)
+layers = 2
+
+[node name="Plane_002_cell_102" parent="." index="117"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.4123, 0.241129, 36.9753)
+layers = 2
+
+[node name="Plane_002_cell_103" parent="." index="118"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00471068, -7.61801, -40.1465)
+layers = 2
+
+[node name="Plane_002_cell_104" parent="." index="119"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.1897, 5.39464, -41.9666)
+layers = 2
+
+[node name="Plane_002_cell_105" parent="." index="120"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.27784, 7.71041, -41.0647)
+layers = 2
+
+[node name="Plane_002_cell_106" parent="." index="121"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.6007, -14.1642, 36.6633)
+layers = 2
+
+[node name="Plane_002_cell_107" parent="." index="122"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.33127, 1.04425, 42.3213)
+layers = 2
+
+[node name="Plane_002_cell_108" parent="." index="123"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.5264, 1.02214, -39.5885)
+layers = 2
+
+[node name="Plane_002_cell_109" parent="." index="124"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.7797, 1.36578, 34.4475)
+layers = 2
+
+[node name="Plane_002_cell_110" parent="." index="125"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.011449, -6.3965, 40.4696)
+layers = 2
+
+[node name="Plane_002_cell_111" parent="." index="126"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.224529, 17.9989, 36.749)
+layers = 2
+
+[node name="eye_cell_001" parent="." index="127"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.98065, -1.73949, -43.3517)
+layers = 2
+
+[node name="eye_cell_002" parent="." index="128"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.41252, 0.669271, -43.5042)
+layers = 2
+
+[node name="eye_cell_004" parent="." index="129"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.239246, 1.02335, -44.578)
+layers = 2
+
+[node name="eye_cell_006" parent="." index="130"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.35116, -3.55212, -42.6525)
+layers = 2
+
+[node name="eye_cell_007" parent="." index="131"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.01372, -2.01272, -44.2663)
+layers = 2
+
+[node name="eye_cell_008" parent="." index="132"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.48481, 4.75055, -44.003)
+layers = 2
+
+[node name="eye_cell_009" parent="." index="133"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.21961, 3.34477, -44.1131)
+layers = 2

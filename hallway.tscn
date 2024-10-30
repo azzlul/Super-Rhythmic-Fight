@@ -1,0 +1,112 @@
+[gd_scene load_steps=11 format=3 uid="uid://dtm1xuexggor8"]
+
+[ext_resource type="PackedScene" uid="uid://dluj0b83rvbh2" path="res://blender projects/hallway.blend" id="1_lgbil"]
+[ext_resource type="Script" path="res://background/hallway.gd" id="2_ic8ob"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_djooi"]
+albedo_color = Color(0, 0, 0, 1)
+emission_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fn1s2"]
+albedo_color = Color(0, 0, 0, 1)
+emission_enabled = true
+
+[sub_resource type="Animation" id="Animation_i3ajt"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Cylinder:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_v3nbh"]
+resource_name = "move"
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Cylinder:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(-1000, 0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_fgje6"]
+_data = {
+"RESET": SubResource("Animation_i3ajt"),
+"move": SubResource("Animation_v3nbh")
+}
+
+[sub_resource type="Animation" id="Animation_34g53"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Cylinder:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(1.5708, 3.14159, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_64dg3"]
+resource_name = "speen"
+length = 4.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Cylinder:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2, 4),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(3.14159, 0, 0), Vector3(6.28319, 0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_0rwf1"]
+_data = {
+"RESET": SubResource("Animation_34g53"),
+"speen": SubResource("Animation_64dg3")
+}
+
+[node name="hallway" instance=ExtResource("1_lgbil")]
+script = ExtResource("2_ic8ob")
+
+[node name="Cylinder" parent="." index="0"]
+transform = Transform3D(-2, 5.07036e-06, -1.83547e-11, 0, -7.23998e-06, -2, -5.07036e-06, -2, 7.23998e-06, 0, 0, 0)
+
+[node name="Cylinder_001" parent="Cylinder" index="0"]
+transform = Transform3D(1, 0, 0, 0, 0.9, 0, 0, 0, 0.9, 0, 0, 0)
+material_override = SubResource("StandardMaterial3D_djooi")
+
+[node name="Cylinder_002" parent="Cylinder" index="1"]
+transform = Transform3D(1, 0, 0, 0, 0.9, 0, 0, 0, 0.9, 0, 0, 0)
+material_override = SubResource("StandardMaterial3D_fn1s2")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." index="1"]
+libraries = {
+"": SubResource("AnimationLibrary_fgje6")
+}
+
+[node name="AnimationPlayer2" type="AnimationPlayer" parent="." index="2"]
+libraries = {
+"": SubResource("AnimationLibrary_0rwf1")
+}
